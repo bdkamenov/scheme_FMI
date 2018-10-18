@@ -1,0 +1,33 @@
+#lang racket/base
+(define eps 0.0001)     ;var
+(define (++ x) (+ x 1)) 
+(define (eps1) 0.001)   ;procedure(func)
+
+(define (dis a b c)
+  (let* ([bs (* b b)]
+        [4ac (* 4 a c)]
+        [disc (+ bs 4ac)])
+        disc))
+
+
+(define (%10 x) (modulo x 10))
+(define (*10 x) (* x 10))
+(define % modulo)
+(define // quotient)
+
+(define (do-reverse curr reverse)
+  (if (= curr 0)
+      reversed                       ; if true 
+      (let* ([last-digit(% curr 10)] ; else
+             [next (// curr 10)]
+             [new-reversed (+ (* revered 10) last-digit)]
+             )
+        (do-reverse next new-reversed)
+        )))
+
+(define [reverse-int n]
+  (cond .. 
+;
+
+;===================================
+
